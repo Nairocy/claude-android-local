@@ -8,7 +8,7 @@
 
 ## 截图
 
-| 首页 | 对话 | 设置 | API 设置 |
+| 首页 | Code | 设置 | API 设置 |
 |---|---|---|---|
 | <img src="docs/shots/home.png" width="200"> | <img src="docs/shots/code.png" width="200"> | <img src="docs/shots/settings.png" width="200"> | <img src="docs/shots/api-settings.png" width="200"> |
 
