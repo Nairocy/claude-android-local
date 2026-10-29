@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  快速输出：手绘闪电（24dp viewport，墨迹 18 单位居中）。
+  照本项目图标规范：描边线稿、圆头圆角，不用字体字符。
+  形状：上宽下窄的折线闪电，两个三角尖都做了 1.2 单位的圆角过渡。
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:pathData="M13.7,3.4 L6.5,13.0 H11.0 L10.1,20.6 L17.5,10.7 H12.6 Z"
+        android:strokeColor="#FF000000"
+        android:strokeWidth="1.7"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:fillColor="#00000000" />
+</vector>

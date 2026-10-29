@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- 订阅锁：源画布 24x24 单位，墨迹 14x16.5 等比缩放到最长边 22 单位，居中 (12,12) -->
+    <group android:translateX="-4.000"
+        android:translateY="-5.000"
+        android:scaleX="1.3333"
+        android:scaleY="1.3333">
+        <path
+            android:pathData="M8 11 H16 A3 3 0 0 1 19 14 V18 A3 3 0 0 1 16 21 H8 A3 3 0 0 1 5 18 V14 A3 3 0 0 1 8 11 Z"
+            android:fillColor="@android:color/transparent"
+            android:strokeColor="#FF000000"
+            android:strokeWidth="1.215"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+        <path
+            android:pathData="M7.5 11 V9 A4.5 4.5 0 0 1 16.5 9 V11"
+            android:fillColor="@android:color/transparent"
+            android:strokeColor="#FF000000"
+            android:strokeWidth="1.215"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+    </group>
+</vector>

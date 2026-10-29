@@ -1,0 +1,16 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- 实心幽灵（无痕页中心用，官方是黑色填充 + 白色圆眼） -->
+    <path
+        android:fillColor="#FF1A1A1A"
+        android:pathData="M4,20 L4,11 C4,5.477 8.477,1 14,1 C19.523,1 24,5.477 24,11 L24,20 L20.5,17 L17,20 L13.5,17 L10,20 L7,17 Z" />
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M8.25,8.2 a1.35,1.35 0 1,0 2.7,0 a1.35,1.35 0 1,0 -2.7,0 Z" />
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M16.05,8.2 a1.35,1.35 0 1,0 2.7,0 a1.35,1.35 0 1,0 -2.7,0 Z" />
+</vector>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  通知栏小图标：状态栏只取 alpha 通道，必须是纯色剪影（这里白色）。
+  与权限页那枚同一套几何，缩小后仍是「圆顶铃铛 + 铃舌」，不用 App 的彩色星芒
+  （彩色 drawable 在状态栏会变成一整块实心，认不出来）。
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:pathData="M12,3.0 C15.0,3.0 17.2,5.3 17.2,8.4 L17.2,12.4 C17.2,13.6 17.6,14.7 18.3,15.7 L19.2,17.0 C19.6,17.7 19.1,18.5 18.3,18.5 L5.7,18.5 C4.9,18.5 4.4,17.7 4.8,17.0 L5.7,15.7 C6.4,14.7 6.8,13.6 6.8,12.4 L6.8,8.4 C6.8,5.3 9.0,3.0 12,3.0 Z"
+        android:fillColor="#FFFFFFFF" />
+    <path
+        android:pathData="M10.2,19.2 L13.8,19.2 C13.8,20.1 13.0,20.8 12,20.8 C11.0,20.8 10.2,20.1 10.2,19.2 Z"
+        android:fillColor="#FFFFFFFF" />
+</vector>

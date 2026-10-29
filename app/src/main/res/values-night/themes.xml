@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  夜间主题：必须显式声明，否则冷启动时窗口底色会先闪一下日间的 #F9F9F7
+  （Compose 的启动页画出来之前，用户看到的就是 windowBackground）。
+  windowLightStatusBar 关掉，否则深色底上是根本看不清的深色图标。
+-->
+<resources>
+    <style name="Theme.Claude" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/surface</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

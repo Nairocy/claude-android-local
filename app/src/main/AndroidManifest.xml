@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 触感反馈（发送 / 按钮 / 回答完成）；普通权限，安装即授予 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!--
+      定位 / 日历：设置→权限页要能跳系统开关（官方同款文案）；
+      后续会把「用户位置 + 当前时间」注入系统提示，所以权限保留。
+      真正读取前还需要一套运行时权限申请（ACCESS_*_LOCATION / READ_CALENDAR 都是 dangerous）。
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+
+    <!--
+      通知（Android 13+ 是运行时权限）：设置→通知→「回复」打开时，
+      生成中挂一条常驻进度通知（正在思索 / 正在输出），写完再发一条「会话已完成」。
+      没授权就静默不发作（开关与系统权限都要满足，见 ChatNotifications.enabled）。
+    -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!--
+      Code 页的流式请求要在后台活着：普通通知挡不住 ROM 冻结，必须前台服务。
+      Android 14+ 还要求 foregroundServiceType=dataSync 与对应权限。
+    -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/claude_spark_icon"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Claude">
+
+        <!--
+          launchMode=singleTop：点「会话已完成」通知时复用已有 Activity（onNewIntent 带
+          conversationId），不叠第二个实例；冷启动时同样从这个 extra 直接落到那条会话。
+        -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize"
+            android:configChanges="orientation|screenSize|keyboardHidden|uiMode">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".data.CodeForegroundService"
+            android:exported="false"
+            android:foregroundServiceType="dataSync" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+</manifest>

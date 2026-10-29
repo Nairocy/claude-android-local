@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- cds_icon_check: 官方 Anthropicons U+E03B，由 tools/font_icons.py 生成，勿手改 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp" android:height="24dp"
+    android:viewportWidth="24" android:viewportHeight="24">
+    <path android:fillColor="#FF131313" android:pathData="M3.23,12.52 Q3,12.31 3,12 Q3,11.69 3.23,11.48 Q3.44,11.27 3.74,11.27 Q4.04,11.27 4.24,11.48 L9.25,16.49 L19.76,5.98 Q19.96,5.75 20.27,5.75 Q20.59,5.75 20.79,5.98 Q21,6.19 21,6.49 Q21,6.79 20.79,6.99 L9.77,18.02 Q9.56,18.25 9.25,18.25 Q8.94,18.25 8.73,18.02 Z" />
+</vector>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ic_key：API 设置入口（手绘线稿；24dp viewport，1.35 描边，与设置页其它手绘图标一致） -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp" android:height="24dp"
+    android:viewportWidth="24" android:viewportHeight="24">
+    <path android:fillColor="#00000000" android:strokeColor="#FF131313"
+        android:strokeWidth="1.35" android:strokeLineCap="round" android:strokeLineJoin="round"
+        android:pathData="M7.5,8.5 a3.5,3.5 0 1,0 0,7 a3.5,3.5 0 1,0 0,-7" />
+    <path android:fillColor="#00000000" android:strokeColor="#FF131313"
+        android:strokeWidth="1.35" android:strokeLineCap="round" android:strokeLineJoin="round"
+        android:pathData="M11,12 H20 M17,12 V14.8 M20,12 V14.2" />
+</vector>

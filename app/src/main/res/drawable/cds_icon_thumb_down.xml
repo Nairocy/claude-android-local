@@ -1,0 +1,19 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- 源画布 45.09x49.16 单位，等比缩放置入 24x24 中，墨迹最长边 22 单位 -->
+    <group android:translateX="-2.345"
+        android:translateY="-2.527"
+        android:scaleX="0.448"
+        android:scaleY="0.448">
+        <path
+            android:pathData="M42.3 9.77L14.9 9.76C9.64 10.11 12.01 19.41 11.51 12.94L11.49 32.07C12.27 31.91 8.99 35.5 17.45 37.55C25.29 39.41 26.19 50.56 29.82 55.02C36.6 56.2 37.83 49.68 38.14 49.52L36.64 40.98C34.06 37.04 40.34 40.32 37.24 39.03L46.21 38.96C57.2 36.46 50.18 22.88 52.7 32.17L50.56 18.61C49.97 9.69 39.58 9.23 45.04 10.43Z"
+            android:fillColor="@android:color/transparent"
+            android:strokeColor="#FF000000"
+            android:strokeWidth="3.62"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+    </group>
+</vector>

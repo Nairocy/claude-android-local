@@ -1,0 +1,20 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- 用户手绘：双气泡（抽屉「对话」入口）。源画布 104x104，墨迹 63.05x63.05；
+         归一化到 24 网格、墨迹 18.7 单位（20dp 渲染时与 项目/Code/Artifacts 同高） -->
+    <group android:translateX="-4.483"
+        android:translateY="-2.594"
+        android:scaleX="0.297"
+        android:scaleY="0.297">
+        <path
+            android:pathData="M26.44 62.96L47.81 62.95A21.5 21.5 0 1 0 32.47 56.51ZM76.92 40.57A21.34 21.34 0 0 1 78.61 72.34L84.71 78.33L63.56 78.55A21.34 21.34 0 0 1 46.94 70.59"
+            android:fillColor="@android:color/transparent"
+            android:strokeColor="#FF000000"
+            android:strokeWidth="4.31"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+    </group>
+</vector>

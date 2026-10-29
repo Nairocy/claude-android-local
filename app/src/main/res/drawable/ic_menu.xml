@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 菜单图标：上两条通栏、下一条短半截（对齐 Claude 原版，用户手绘提供） -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FF333333"
+        android:strokeWidth="1.6"
+        android:strokeLineCap="round"
+        android:pathData="M3,5 L21,5" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FF333333"
+        android:strokeWidth="1.6"
+        android:strokeLineCap="round"
+        android:pathData="M3,11 L21,11" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FF333333"
+        android:strokeWidth="1.6"
+        android:strokeLineCap="round"
+        android:pathData="M3,17 L11,17" />
+</vector>

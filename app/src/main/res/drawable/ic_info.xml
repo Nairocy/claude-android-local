@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 设置页图标（按官方截图手绘线稿；24dp viewport，1.35 描边） -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp" android:height="24dp"
+    android:viewportWidth="24" android:viewportHeight="24">
+    <path android:fillColor="#00000000" android:strokeColor="#FF131313"
+        android:strokeWidth="1.35" android:strokeLineCap="round" android:strokeLineJoin="round"
+        android:pathData="M12,3.5 a8.5,8.5 0 1,0 0,17.0 a8.5,8.5 0 1,0 0,-17.0" />
+    <path android:fillColor="#FF131313" android:pathData="M12,7.8 m-1,0 a1,1 0 1,0 2,0 a1,1 0 1,0 -2,0" />
+    <path android:fillColor="#00000000" android:strokeColor="#FF131313"
+        android:strokeWidth="1.35" android:strokeLineCap="round" android:strokeLineJoin="round"
+        android:pathData="M12,11.2 V16.6" />
+</vector>

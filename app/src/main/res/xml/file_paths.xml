@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <cache-path name="camera" path="camera/" />
+    <!-- Code 页导出：工作区文件 / 整包 zip 先落到 cache/export/ 再交给系统分享面板 -->
+    <cache-path name="export" path="export/" />
+</paths>

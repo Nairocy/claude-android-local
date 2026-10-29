@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 夜间色值覆盖：与 ui/theme/Color.kt 的 *Dark 常量保持一致 -->
+<resources>
+    <color name="surface">#151515</color>
+    <color name="ink">#F9F9F7</color>
+</resources>
