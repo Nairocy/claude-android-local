@@ -1,0 +1,22 @@
+# Gradle / Android
+.gradle/
+build/
+app/build/
+.kotlin/
+local.properties
+*.iml
+.idea/
+captures/
+
+# 构建产物
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# Paparazzi 截图产物（精选图在 docs/shots/）
+app/src/test/snapshots/images/
+
+# 系统
+.DS_Store
+Thumbs.db
